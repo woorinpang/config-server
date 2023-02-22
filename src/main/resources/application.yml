@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native, default #native file repository
+  cloud:
+    config:
+      server:
+        native:
+#          search-locations: ${search.location:file:///${user.home}/github/woorinpang/config} #window
+          search-locations: file://${user.home}/workspace/github/woorinpang/config #mac
+
+#config server actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: busrefresh
