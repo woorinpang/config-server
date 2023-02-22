@@ -11,7 +11,7 @@ spring:
       server:
         native:
 #          search-locations: ${search.location:file:///${user.home}/github/woorinpang/config} #window
-          search-locations: file://${user.home}/workspace/github/woorinpang/config #mac
+          search-locations: file://${user.home}/workspace/github/woorinpang/config-server-repo #mac
 
 #config server actuator
 management:
