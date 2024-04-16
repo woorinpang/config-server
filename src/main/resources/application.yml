@@ -6,17 +6,17 @@ spring:
     name: config-server
   profiles:
     active: native, default #native file repository
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: https://github.com/woorinpang/config-repo.git
   cloud:
     config:
       server:
-        native:
-#          search-locations: ${search.location:file:///${user.home}/workspace/github/woorinpang/config/config-dev-repo} #window
-          search-locations: file://${user.home}/workspace/github/woorinpang/config #mac
+        git:
+          uri: https://github.com/woorinpang/config-repo.git
+#  cloud:
+#    config:
+#      server:
+#        native:
+##          search-locations: ${search.location:file:///${user.home}/workspace/github/woorinpang/config/config-dev-repo} #window
+#          search-locations: file://${user.home}/workspace/github/woorinpang/config #mac
 
 #config server actuator
 management:
