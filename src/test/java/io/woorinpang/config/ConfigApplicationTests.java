@@ -1,4 +1,4 @@
-package com.woorinpang.config;
+package io.woorinpang.config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
