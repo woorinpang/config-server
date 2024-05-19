@@ -9,6 +9,8 @@ spring:
   cloud:
     config:
       server:
+        native:
+          search-locations: file://${home}/Develop/woorinpang/config/config-repo
         git:
           uri: https://github.com/woorinpang/config-repo.git
 #  cloud:
